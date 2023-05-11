@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/honey.png">
+  <!-- box icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <a href="#" class="logo"><i class='bx bxs-home'></i>Honey</a>
+
+    <ul class="navlist">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#shop">Our Shop</a></li>
+      <li><a href="#review">Our Customer</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="#"><i class='bx bx-search'></i></a>
+      <a href="#"><i class='bx bx-cart'></i></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <!-- home -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Meet, <span>Eat &</span> <br> Enjoy The true <br> taste</h1>
+      <a href="#" class="btn" onclick="openMenu()">Explore Menu<i class='bx bxs-right-arrow'></i></a>
+      <a href="#" class="btn2" onclick="openOrder()">Order Now</a>
+    </div>
+
+    <div class="home-img">
+      <img src="img/hero.png" alt="">
+    </div>
+  </section>
+
+  <div id="menu-popup" class="homepopup">
+    <h2>Our Menu</h2>
+    <p>We offer a wide variety of delicious dishes for you to enjoy.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <div id="order-popup" class="homepopup">
+    <h2>Online Ordering</h2>
+    <p>You can now order your favorite dishes online from the comfort of your home.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <!-- container -->
+  <section class="container">
+    <div class="container-box">
+      <img src="img/c1.png" alt="">
+      <h3>11:00 am - 8:00 pm</h3>
+      <a href="#" id="working-hours-link">Working Hours</a>
+    </div>
+
+    <div class="container-box">
+      <img src="img/c2.png" alt="">
+      <h3>Honey Springs 555</h3>
+      <a href="https://www.google.com/maps/search/?api=1&query=Honey+Springs+555,+New+York,+NY" target="_blank">Get
+        Directions</a>
+    </div>
+
+    <div class="container-box">
+      <img src="img/c3.png" alt="">
+      <h3>(123) 456-7890</h3>
+      <a href="tel:+11234567890" target="_blank">Call Us Now</a>
+    </div>
+  </section>
+
+  <!-- popup -->
+  <div id="working-hours-popup" class="popup">
+    <h2 id="popup-title"></h2>
+    <p id="popup-content"></p>
+    <button id="popup-close-btn">Close</button>
+  </div>
+
+  <!-- about us -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/about.png" alt="">
+    </div>
+
+    <div class="about-text">
+      <h2>Living well begins <br> with eating well.</h2>
+      <p>Over its history as a food, the main uses of honey are in cooking, baking, desserts, as a spread on bread, as
+        an addition to various beverages such as tea, and as a sweetener in some commercial beverages.<br> <br>Due to
+        its energy density, honey is an important food for virtually all hunter-gatherer cultures in warm climates, with
+        the Hadza people ranking honey as their favorite food.</p>
+      <a href="#" class="btn" id="explore-story-link">Explore Story<i class='bx bxs-right-arrow'></i></a>
+    </div>
+
+    <div class="aboutpopup" id="explore-story-popup">
+      <div class="aboutpopup-content">
+        <h3 id="aboutpopup-title"></h3>
+        <p id="aboutpopup-content-text"></p>
+        <button id="aboutpopup-close-btn">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- our shop -->
+  <section class="shop" id="shop">
+    <div class="middle-text">
+      <h4>Our Shop</h4>
+      <h2>Lets Check Popular Products</h2>
+    </div>
+
+    <div class="shop-content">
+      <div class="row">
+        <img src="img/p1.png" alt="">
+        <h3>Blueberry Honey</h3>
+        <p>It is a long established fact that a reader</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$21.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart' id="heart-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/p2.png" alt="">
+        <h3>Blueberry Honey</h3>
+        <p>It is a long established fact that a reader</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$21.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart' id="heart-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/p3.png" alt="">
+        <h3>Blueberry Honey</h3>
+        <p>It is a long established fact that a reader</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$21.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart' id="heart-icon"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/p4.png" alt="">
+        <h3>Blueberry Honey</h3>
+        <p>It is a long established fact that a reader</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$21.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart' id="heart-icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-btn">
+      <a href="#" class="btn">All Products<i class='bx bxs-right-arrow'></i></a>
+    </div>
+  </section>
+
+  <!-- reviews -->
+  <section class="review" id="review">
+    <div class="middle-text">
+      <h4>Our Customer</h4>
+      <h2>Clients Review About Our Food</h2>
+    </div>
+
+    <div class="review-content">
+      <div class="box">
+        <p>The Taste is still in my mouth and I can feel the depth of the taste of the every ingredients used in the
+          food. I really Love Honey.</p>
+        <div class="in-box">
+          <div class="bx-img">
+            <img src="img/r1.jpg" alt="">
+          </div>
+          <div class="bxx-text">
+            <h4>John Karahan</h4>
+            <h5>Food Vlogger</h5>
+            <div class="ratings">
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>The Taste is still in my mouth and I can feel the depth of the taste of the every ingredients used in the
+          food. I really Love Honey.</p>
+        <div class="in-box">
+          <div class="bx-img">
+            <img src="img/r2.jpg" alt="">
+          </div>
+          <div class="bxx-text">
+            <h4>John Karahan</h4>
+            <h5>Food Vlogger</h5>
+            <div class="ratings">
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>The Taste is still in my mouth and I can feel the depth of the taste of the every ingredients used in the
+          food. I really Love Honey.</p>
+        <div class="in-box">
+          <div class="bx-img">
+            <img src="img/r3.jpg" alt="">
+          </div>
+          <div class="bxx-text">
+            <h4>John Karahan</h4>
+            <h5>Food Vlogger</h5>
+            <div class="ratings">
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+              <a href="#"><i class='bx bxs-star'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <div class="contact-img">
+        <div class="c-one">
+          <img src="img/f1.png" alt="">
+        </div>
+        <div class="c-one">
+          <img src="img/f2.png" alt="">
+        </div>
+      </div>
+
+      <div class="contact-text">
+        <h2>Contact Us</h2>
+        <p>Over its history as a food, the main used of honey are in cooking, baking, desserts, as a spread on bread, as
+          an addition to various beverages such as tea, and as a sweetener in some commercial beverages.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://www.google.com/" target="_blank"><i class='bx bxl-google'></i></a>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="main-d">
+          <a href="https://www.google.com/maps/search/?api=1&query=Honey+Springs+555,+New+York,+NY" target="_blank"><i
+              class='bx bxs-location-plus'></i>Honey Springs 555, New York, NY</a>
+        </div>
+
+        <div class="main-d">
+          <a href="tel:+11234567890" target="_blank"><i class='bx bx-mobile-alt'></i>(123) 456-7890</a>
+        </div>
+
+        <div class="main-d">
+          <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i>Xiwen Hao</a>
+        </div>
+
+        <div class="main-d">
+          <a href="mailto:honey@example.com" target="_blank"><i class='bx bxs-bell'></i>Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- scroll top -->
+  <a href="#" class="scroll">
+    <i class='bx bx-up-arrow-alt'></i>
+  </a>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- link to js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
